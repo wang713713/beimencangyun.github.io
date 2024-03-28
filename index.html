@@ -1,4 +1,7 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 <font face="宋体">
+    <meta charset="UTF-8">
 <p>mincreaft 城市建造地图--内测版           网站版本alpha 0.1内部测试版本</p>
 <p>版本号 alpha0.47.5<p>
 <p>作者 北门苍云</p>
@@ -21,7 +24,7 @@
   
   <button type="submit">登录</button>
 </form>
-<p>其实登录没什么用（bushi）</p>
+<p><s>其实登录没什么用（bushi）</s></p>
 
 //标题与网页图标
 <!DOCTYPE html>
@@ -43,8 +46,8 @@
 //显示时间
 <html>
 <head>
+<body>
 <meta charset="UTF-8">
-<title>实时显示系统时间B</title>
  
 <script>
      function  getD1(){
@@ -62,4 +65,72 @@
 <div id="datetime">/div>
  
 </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+
+</head>
+
+<body>
+
+<p><input type="button" value="当前时间" onclick="date()"></p>
+
+<script>
+
+    function date() {
+
+        var date = new Date();
+
+        this.year = date.getFullYear();
+
+        this.month = date.getMonth() + 1;
+
+        this.date = date.getDate();
+
+        this.day = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六")[date.getDay()];
+
+        this.hour = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+
+        this.minute = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+
+        this.second = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+
+        var currentTime1 = this.year + "年" + this.month + "月" + this.date + "日 "
+
+        +this.day
+
+        +this.hour+"时"+this.minute+"分"+this.second;
+
+        alert(currentTime1);
+
+    }
+
+</script>
+
+</body>
+
 </html>
