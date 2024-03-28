@@ -46,6 +46,7 @@
 <!--显示时间--> 
 
 
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -60,7 +61,7 @@
 
 <body>
 
-<p><input type="button" value="2024--" onclick="date()"></p>
+<p><input type="button" value="2024-" onclick="date()"></p>
 
 <script>
 
@@ -83,6 +84,10 @@
         this.second = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
 
         var currentTime1 = this.year + "年" + this.month + "月" + this.date + "日 "
+
+        +this.day
+
+        +this.hour+"时"+this.minute+"分"+this.second;
 
         alert(currentTime1);
 
